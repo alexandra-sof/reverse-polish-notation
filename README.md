@@ -5,7 +5,7 @@ The project consists of a mathematical expression evaluator, which can perform a
 
 ## Project overview
 
-The programme consists of two steps:
+The program consists of two steps:
 - it takes the infix notation of a mathematic expression and converts it to its postfix (or reverse polish) notation;
 - it evaluates the postfix notation, providing the result of the mathematical expression.
 
