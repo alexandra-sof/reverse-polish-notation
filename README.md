@@ -2,8 +2,7 @@
 
 The project consists of a mathematical expression evaluator, which can perform any calculations, no matter how complex, taking into account the correct evaluation of the order of operations.
 
- <br>
- 
+
 ## Project overview
 
 The programme consists of two steps:
@@ -20,8 +19,6 @@ The programme consists of two steps:
 |     ^    |    power up    |   right-left  |     13     |  
 
 
-<br>
-
 ## Example of running the application:
 **Infix Expression: 32 + (2 + 1) * 2 ^ 3 ^ 2 - 81 / (5 - 1 * 20 / 2)**  
 
@@ -30,8 +27,6 @@ The programme consists of two steps:
 **Expression evaluation: 1584**
 
 
- <br>
- 
 ## About infix, postfix and prefix notations
 Infix, postfix and prefix notations represent three different ways of writing equivalent mathematical expressions.
 
@@ -48,8 +43,7 @@ Prefix notation, also known as Polish notation (PN) is a mathematical notation i
 ### Postfix Notation
 Postfix Notation, or Reverse Polish notation (RPN) is a mathematical notation in which operators follow their operands. Both prefix and postfix notations eliminate the need for paratheses as long as each operator has a fixed number of operands.
 
- <br>
- 
+
 ## Converting from Infix to Postfix notation
 **Shunting yard algorithm** was invented by Edsger Dijkstra and it is one of the most famous algorithm for converting expressions from infix form to postfix form. The algorithm is stack-based. For the conversion there are two String variables (input and output) and a stack that holds operators pending to be added to the output. The program reads each symbol in order and does that based on that symbol.
 
@@ -79,7 +73,6 @@ Postfix Notation, or Reverse Polish notation (RPN) is a mathematical notation in
     2.2.1. return error (i.e. expression had wrong parantheses)
 3. display/return the postfix form
 ```
- <br>
  
 ## Evaluation of postfix expression
 The algorithm uses a stack to perform the operations in the correct order.
