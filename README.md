@@ -31,8 +31,8 @@ The program consists of two steps:
 Infix, postfix and prefix notations represent three different ways of writing equivalent mathematical expressions.
 
 - **Infix**: 3 + 4
-- **Postfix**: 3 4 +
 - **Prefix**: + 3 4
+- **Postfix**: 3 4 +
 
 ### Infix Notation
 The infix notation is the usual, common way we write mathematical expresions. In infix notation the operators are placed between operands and parentheses surrounding groups of operands and operators are necessary to indicate the intended order in which operations are to be performed. In the absence of parentheses, certain precedence rules determine the order of operations.
