@@ -45,7 +45,7 @@ Postfix Notation, or Reverse Polish notation (RPN) is a mathematical notation in
 
 
 ## Converting from Infix to Postfix notation
-**Shunting yard algorithm** was invented by Edsger Dijkstra and it is one of the most famous algorithm for converting expressions from infix form to postfix form. The algorithm is stack-based. For the conversion there are two String variables (input and output) and a stack that holds operators pending to be added to the output. The program reads each symbol in order and does that based on that symbol.
+**Shunting yard algorithm** was invented by Edsger Dijkstra and it is one of the most famous algorithm for converting expressions from infix form to postfix form. The algorithm is stack-based. For the conversion there are two String variables (input and output) and a stack that holds operators pending to be added to the output. The program reads each symbol in order and does something based on that symbol.
 
 **Shunting yard algorithm pseudocode**  
 ```
