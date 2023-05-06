@@ -19,14 +19,6 @@ The program consists of two steps:
 |     ^    |    power up    |   right-left  |     13     |  
 
 
-## Example of running the application:
-**Infix Expression: 32 + (2 + 1) * 2 ^ 3 ^ 2 - 81 / (5 - 1 * 20 / 2)**  
-
-**Postfix Expression: 32 2 1 + 2 3 2 ^ ^ * + 81 5 1 20 * 2 / - / -** 
-
-**Expression evaluation: 1584**
-
-
 ## About infix, postfix and prefix notations
 Infix, postfix and prefix notations represent three different ways of writing equivalent mathematical expressions.
 
@@ -98,3 +90,18 @@ The algorithm uses a stack to perform the operations in the correct order.
 4. display/return result  
 ```
 
+## Examples of running the application:
+
+### Example 1
+**Infix Expression: 12 + 6 - 37 * 3 * (2 - 4)**  
+
+**Postfix Expression: 12 6 + 37 3 * 2 4 - * -** 
+
+**Expression evaluation: 240**
+
+### Example 2
+**Infix Expression: 32 + (2 + 1) * 2 ^ 3 ^ 2 - 81 / (5 - 1 * 20 / 2)**  
+
+**Postfix Expression: 32 2 1 + 2 3 2 ^ ^ * + 81 5 1 20 * 2 / - / -** 
+
+**Expression evaluation: 1584**
