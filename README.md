@@ -45,7 +45,7 @@ Postfix Notation, or Reverse Polish notation (RPN) is a mathematical notation in
 
 
 ## Converting from Infix to Postfix notation
-**Shunting yard algorithm** was invented by Edsger Dijkstra and it is one of the most famous algorithm for converting expressions from infix form to postfix form. The algorithm is stack-based. For the conversion there are two String variables (input and output) and a stack that holds operators pending to be added to the output. The program reads each symbol in order and performs an action based on that symbol.
+**Shunting yard algorithm** was invented by Edsger Dijkstra and is one of the most famous algorithm for converting expressions from infix form to postfix form. The algorithm is stack-based. For the conversion there are two String variables (input and output) and a stack that holds operators pending to be added to the output. The program reads each symbol in order and performs an action based on that symbol.
 
 **Shunting yard algorithm pseudocode**  
 ```
@@ -55,13 +55,15 @@ Postfix Notation, or Reverse Polish notation (RPN) is a mathematical notation in
          1.2.1 add it to the postfix form
      1.3 if the entity is an operator (be it O1), then:
          1.3.1 while ((there is an operator at the top of the stack (be it O2)) AND
-                       ((precedence(O1) < precedence(O2)) OR (precedence(O1) = precedence(O2) AND O2 has left-associativity)))
+                       (O2 is not a left paranthesis) AND
+                       ((precedence(O1) < precedence(O2)) OR 
+                       (precedence(O1) = precedence(O2) AND O2 has left-right associativity)))
              1.3.1.1 extract O2 and add it to the postfix form
          1.3.2 add O1 to the stack
      1.4 if the entity is a left-parenthesis, then:
          1.4.1 add the parenthesis to the stack
      1.5 if the entity is a right-paranthesis, then:
-         1.5.1 as long as the operator at the top of the stack (be it O) is not a left-parenthesis:
+         1.5.1 while the operator at the top of the stack (be it O) is not a left-parenthesis:
              1.5.1.1 extract O and add it to the postfix form
          1.5.2 if the stack is empty (and a left-parenthesis was not found)
              1.5.2.1 return error (i.e. expression had wrong parentheses)
@@ -80,7 +82,7 @@ The algorithm uses a stack to perform the operations in the correct order.
 **Postfix expression evaluation algorithm pseudocode**  
 ```
 1. while there is an entity to read
-  1.1. read the entity (operand or operator)
+  1.1. read the entity (i. e. operand or operator)
   1.2. if the entity is an operand (i.e. number) then:
     1.2.1 add the entity to the stack
   1.3. if the entity is an operator (be it O) then:
