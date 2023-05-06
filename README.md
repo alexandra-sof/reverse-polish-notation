@@ -87,7 +87,7 @@ The algorithm uses a stack to perform the operations in the correct order.
 2. pop the result from the stack
 3. if stack is not empty
   3.1. return error (postfix expression is wrong)
-4. display/return result  
+4. display/return the result  
 ```
 
 ## Examples of running the application:
